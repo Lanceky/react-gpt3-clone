@@ -28,6 +28,17 @@ const Navbar = () => {
         ? <RiCloseLine color="#ffff" size={27} onclick={()=> setToggleMenu(false)}/>
         : <RiMenu3Line color="#ffff" size={27} onclick={()=> setToggleMenu(true)}/>
       }
+      {toggleMenu && (
+        <div className='gpt3__navbar-menu_container scale-up-center'>
+          <div className='gpt3__navbar-menu_container-links'>
+          <p><a href="#">Home</a></p>
+          <p><a href="#wgpt3">What is GPT?</a></p>
+          <p><a href="#possibility">Open AI</a></p>
+          <p><a href="#features">Case Studies</a></p>
+          <p><a href="#blog">Library</a></p>
+          </div>
+        </div>
+      )}
       </div>
     </div>
   )
